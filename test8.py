@@ -91,6 +91,7 @@ while True:
                     s.append(name)
         elif matchIndex != matches[matchIndex]:
             time.sleep(2)
+            Dialog.close()
             if not "Регистрацыя"  in s:
                 print(f"Регистрацыя")
                 s.append("Регистрацыя")

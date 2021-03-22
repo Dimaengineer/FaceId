@@ -9,15 +9,6 @@ from VideoCapture import Device
 from PySide2 import QtWidgets
 from PySide2.QtWidgets import QApplication, QWidget
 import sys
-from window import Ui_Dialog
-from window2 import Ui_Dialog2
-from window3 import Ui_Dialog3
-
-app = QtWidgets.QApplication(sys.argv)
-Dialog = QtWidgets.QDialog()
-ui = Ui_Dialog()
-ui.setupUi(Dialog)
-Dialog.show()
 path = 'dataset'
 images = []
 classNames = []
@@ -82,7 +73,6 @@ while True:
             markAttendance(name)
             if who == "seller":
                 if not name in s:
-                    Dialog.close()
                     print(f"Привет {name} за работу")
                     s.append(name)
             if who == "buyer":
@@ -91,7 +81,6 @@ while True:
                     s.append(name)
         elif matchIndex != matches[matchIndex]:
             time.sleep(2)
-            Dialog.close()
             if not "Регистрацыя"  in s:
                 print(f"Регистрацыя")
                 s.append("Регистрацыя")
@@ -99,7 +88,7 @@ while True:
             Who = input("who you(buyer, seller)")
             if Who == "seller" or "buyer":
                 path = "C:\python388\prog\dataset"
-                cv2.imwrite(os.path.join(path ,name + Who + '.jpg'), img)
+                cv2.imwrite(os.path.join(path ,Name + Who + '.jpg'), img)
                 myList = os.listdir(path)
 
                 for cls in myList:
@@ -117,3 +106,4 @@ while True:
                         encodeList.append(encode)
                     return encodeList
                 encodeListKnown = findEncodings(images)
+

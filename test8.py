@@ -15,11 +15,11 @@ classNames = []
 classWho = []
 myList = os.listdir(path)
 
-for cls in myList:
-    curImg = cv2.imread(f'{path}/{cls}')
+for mylist in myList:
+    curImg = cv2.imread(f'{path}/{mylist}')
     images.append(curImg)
-    classNames.append(os.path.splitext(cls)[0].replace("buyer", "").replace("seller", ""))
-    classWho.append(os.path.splitext(cls)[0].replace(os.path.splitext(cls)[0].replace("buyer", "").replace("seller", ""), ""))
+    classNames.append(os.path.splitext(mylist)[0].replace("buyer", "").replace("seller", ""))
+    classWho.append(os.path.splitext(mylist)[0].replace(os.path.splitext(mylist)[0].replace("buyer", "").replace("seller", ""), ""))
 
 
 def findEncodings(images):

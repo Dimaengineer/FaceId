@@ -38,4 +38,10 @@ This project is ideal for companies with many employees. It uses Python's `face_
 - `OpenCV`
 - `Numpy`
 
+## Images
+- **Registration** <img width="1044" alt="Screenshot 2024-08-18 at 22 19 01" src="https://github.com/user-attachments/assets/aae7e270-d7a2-4149-a7fd-64e9c8971693">
+
+- **Detection** ![Screenshot 2024-08-18 at 22 19 24-2-2](https://github.com/user-attachments/assets/57ad43a4-e518-4cc2-a24e-8f31c1587d6f)
+
+
 ---

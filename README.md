@@ -1,5 +1,3 @@
-Here's a concise description for your GitHub repository, including where you can insert photos:
-
 ---
 
 # Face Recognition Attendance System

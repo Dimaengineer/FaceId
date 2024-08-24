@@ -21,7 +21,7 @@ This project is ideal for companies with many employees. It uses Python's `face_
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Dimaengineer/FaceId.git
+   git clone https://github.com/DmitroKDS/FaceId.git
    ```
 2. **Install dependencies:**
    ```bash
